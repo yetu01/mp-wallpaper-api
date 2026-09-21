@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+// 把你所有壁纸cdn链接填到这个数组
+const imgList = [
+"https://cdn.jsdelivr.net/gh/yetu01/mp-wallpaper-api@main/images/BG1.webp",
+"https://cdn.jsdelivr.net/gh/yetu01/mp-wallpaper-api@main/images/BG2.webp",
+"https://cdn.jsdelivr.net/gh/yetu01/mp-wallpaper-api@main/images/BG3.webp"
+];
+// 随机取一张
+const randomImg = imgList[Math.floor(Math.random() * imgList.length)];
+// 页面只输出图片URL（MoviePilot读取这个文本）
+document.write(randomImg);
+</script>
+</body>
+</html>
