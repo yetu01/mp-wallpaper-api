@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+<html>
+<body>
+<pre id="result"></pre>
 <script>
 const pics = [
 "https://yetu01.github.io/mp-wallpaper-api/images/BG4.webp",
 "https://yetu01.github.io/mp-wallpaper-api/images/BG1.webp",
-"https://yetu01.github.io/mp-wallpaper-api/images/BG2.webp",
-"https://yetu01.github.io/mp-wallpaper-api/images/BG3.webp"
+"https://yetu01.github.io/mp-wallpaper-api/images/BG2.webp"
 ];
 const randomImg = pics[Math.floor(Math.random() * pics.length)];
-// 返回JSON格式，不再跳转
-document.body.textContent = JSON.stringify({img:randomImg});
+const data = {img: randomImg};
+document.getElementById("result").textContent = JSON.stringify(data);
 </script>
+</body>
+</html>
